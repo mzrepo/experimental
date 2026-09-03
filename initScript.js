@@ -1,6 +1,3 @@
-//Plyr Initialize
-const players = Array.from(document.querySelectorAll('.js-player')).map((p) => new Plyr(p));
-
 //SPLIDE SLIDESHOW
 var splide = new Splide('.splide', {
     type: 'loop',
