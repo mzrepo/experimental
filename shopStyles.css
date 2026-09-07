@@ -1,0 +1,192 @@
+/*
+CSS: SHOP & COLLECTIONS
+*/
+
+/*
+CSS: SHOP PAGE
+*/
+#content-section-Zz20e7leGr {
+    display: none;
+}
+
+#page-section-collection {
+    display: none;
+}
+
+
+.section-background:not(
+    #content-section-rGEELOjYGn .section-background,
+    [data-section-key="footer"] .section-background,
+    #content-section-yBbkVmy8GD .section-background) {
+    background-color: transparent;
+}
+
+.section-contents-wrapper:not(
+    #content-section-rGEELOjYGn .section-contents-wrapper,
+    [data-section-key="footer"] .section-contents-wrapper,
+    #content-section-yBbkVmy8GD .section-contents-wrapper) {
+        padding: 34px 50px;
+        max-width: 1000px;
+        margin-top: 2rem;
+        background-color: #0f0f0f;
+}
+
+.section-contents-wrapper:not(
+    #content-section-rGEELOjYGn .section-contents-wrapper,
+    [data-section-key="footer"] .section-contents-wrapper,
+    #content-section-yBbkVmy8GD .section-contents-wrapper)::before {
+        content: "";
+        border: 30px solid transparent;
+        border-image: url('https://ik.imagekit.io/imgktmz/theme-v2/frameBorderGold.avif') 30 round;
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+        pointer-events: none;
+}
+
+
+/*
+CSS: SHOP PAGE HERO
+*/
+.promoHero {
+    /*switch to block for PreOrders*/
+    display: none;
+}
+
+#content-section-yBbkVmy8GD .section-contents-wrapper {
+    max-width: 100% !important;
+    padding: 0;
+    margin: 0;
+}
+
+#content-section-yBbkVmy8GD .section-background,
+#content-section-yBbkVmy8GD .heading-text-main {
+    display: none;
+}
+
+.shopHeroBanner {
+    width: 100%;
+    height: 580px;
+    background-image: url('https://ik.imagekit.io/imgktmz/theme-v2/INPRNT-banner.avif?updatedAt=1788546383302');
+    background-position-y: -80px;
+    background-position-x: center;
+    position: relative;
+}
+
+.shopHeroBanner .slidebtn {
+    color: var(--colorMahogony) !important;
+    text-decoration: none !important;
+    padding: 20px;
+    text-transform: uppercase;
+    border-radius: 20px 0px 20px 0px;
+    font-family: gabarito;
+    font-weight: bold;
+    font-size: 1.25rem;
+    transition: padding ease .3s;
+    box-shadow: 3.2px 6.4px 6.4px hsl(0deg 0% 0% / 0.40);
+    border: var(--colorGold) solid 3px;
+    background-color: var(--colorHoneyDew);
+
+}
+
+.shopHeroBanner .slidebtn:hover {
+    background-color: var(--colorMZGold);
+    border-color: var(--colorLogo);
+}
+
+.shopHeroBox {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 40px;
+}
+
+
+
+/*
+CSS: BROWSE BAR
+*/
+#content-section-rGEELOjYGn {
+    position: relative;
+}
+
+#content-section-rGEELOjYGn::before {
+    content: "";
+    border-top: 30px solid transparent;
+    border-image: url('https://ik.imagekit.io/imgktmz/theme-v2/frameBorderGold.avif') 30 round;
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+
+/*
+CSS: SHOP PAGE INPRNT
+*/
+.inprntbox {
+    text-align: center;
+}
+
+.inprntbox a{
+    text-decoration: none !important;
+}
+
+.inprntbox .heading-text {
+    margin: 0;
+    padding: 0;
+}
+
+.inprnt-imgbound {
+    margin-top: 1rem;
+}
+
+.inprntbox img {
+    border-radius: 8px;
+    outline: 2px solid #474747;
+}
+
+.inprntbox .button-wrapper {
+    margin-top: .65rem;
+}
+
+.inprntbox .btn {
+    cursor: pointer;
+}
+
+.inprnt-container {
+    display: flex;
+    flex-direction: row;  
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.inprnt-category{
+    flex: 1;
+}
+
+/*
+Mobile Styles
+*/
+@media screen and (max-width: 768px) {
+/*
+CSS: SHOP PAGE MOBILE
+*/
+    .shopHeroBanner {
+        height: 400px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+    }
+
+    .section-contents-wrapper:not(
+    #content-section-rGEELOjYGn .section-contents-wrapper,
+    [data-section-key="footer"] .section-contents-wrapper,
+    #content-section-yBbkVmy8GD .section-contents-wrapper) {
+        padding: 34px 20px;
+        max-width: 96vw;
+    }
+    
+}
